@@ -1,6 +1,4 @@
 import "./style.css";
+import createHome from "./pages/home";
 
-const body = document.querySelector("body");
-
-body.textContent = "hello";
-
+createHome();

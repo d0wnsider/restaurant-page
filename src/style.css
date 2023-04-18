@@ -6,20 +6,22 @@
 }
 
 body {
-  background-image: url("./img/tara-evans-lnz6eLsQrMM-unsplash.jpg");
+  background: url("./img/tara-evans-lnz6eLsQrMM-unsplash.jpg") no-repeat center
+    center fixed;
   background-size: cover;
-  backdrop-filter: blur(5px);
 }
 
 nav {
   padding: 50px;
-}
-nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+.navBtn {
+  padding: 10px;
+  border-style: none;
+  cursor: pointer;
 }
 
 main {
@@ -30,16 +32,11 @@ main {
   align-items: center;
   gap: 10px;
 }
-main h1 {
+.title {
   font-size: 4rem;
 }
-main p {
+.para {
   font-size: 1.5rem;
-}
-.order {
-  padding: 10px;
-  border-style: none;
-  cursor: pointer;
 }
 
 footer {
