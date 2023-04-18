@@ -1,1 +1,6 @@
-console.log("hello world");
+import "./style.css";
+
+const body = document.querySelector("body");
+
+body.textContent = "hello";
+
