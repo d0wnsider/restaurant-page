@@ -142,7 +142,7 @@ nav {
 /* Contact */
 .addressTitle {
   font-size: 4rem;
-  color: var(--mainColor);
+  color: var(--darkColor);
 }
 .addressDesc {
   font-size: 1.5rem;
@@ -152,6 +152,22 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.telephone {
+  font-size: 3rem;
+  color: var(--darkColor);
+}
+.telephoneDesc {
+  font-size: 1.5rem;
+}
+.contactUpdate {
+  padding: 100px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 footer {
