@@ -1,7 +1,7 @@
 function createMenu() {
   const body = document.querySelector("body");
   const content = document.querySelector(".content");
-
+  const footer = document.querySelector("footer");
   if (content) {
     content.remove();
   }
@@ -50,6 +50,10 @@ function createMenu() {
   newContent.appendChild(bCard);
   newContent.appendChild(kCard);
   body.appendChild(newContent);
+
+  if (footer) {
+    footer.remove();
+  }
 }
 
 export default createMenu;

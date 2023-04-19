@@ -1,7 +1,7 @@
 function createContact() {
   const body = document.querySelector("body");
   const content = document.querySelector(".content");
-
+  const footer = document.querySelector("footer");
   if (content) {
     content.remove();
   }
@@ -26,6 +26,10 @@ function createContact() {
   newContent.appendChild(addressDesc);
   newContent.appendChild(hours);
   body.appendChild(newContent);
+
+  if (footer) {
+    footer.remove();
+  }
 }
 
 export default createContact;

@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
 :root {
   --mainColor: rgba(255, 255, 255, 0.8);
   --darkColor: rgba(10, 0, 50, 0.7);
+  --blue: rgba(0, 0, 10, 0.1);
   --lineColor: rgba(100, 20, 20, 1);
   --pink: rgba(180, 0, 200, 0.7);
   --yellow: rgba(255, 255, 0, 0.7);
   --green: rgba(0, 200, 10, 0.7);
+  --font: "Dancing Script", cursive;
 }
 
 * {
@@ -15,12 +19,15 @@
 }
 
 body {
+  user-select: none;
   background: url("./img/tara-evans-lnz6eLsQrMM-unsplash.jpg") no-repeat center
     center fixed;
   background-size: cover;
+  font-family: "Times New Roman", Times, serif;
 }
 
 nav {
+  height: 10vh;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -63,16 +70,23 @@ nav {
 }
 /* Home */
 .title {
-  font-size: 4rem;
-  border-bottom: 2px solid var(--lineColor);
-  color: var(--mainColor);
+  font-family: var(--font);
+  font-size: 10rem;
+  /* border-bottom: 2px solid var(--lineColor); */
 }
 .para {
   font-size: 1.5rem;
 }
+.title,
+.para {
+  color: var(--mainColor);
+  backdrop-filter: blur(20px);
+  background-color: var(--blue);
+}
 /* Menu */
 .sCard {
   background-color: pink;
+  flex: 1;
 }
 .sTitle {
   color: var(--mainColor);
@@ -81,6 +95,7 @@ nav {
 }
 .bCard {
   background-color: yellow;
+  flex: 1;
 }
 .bTitle {
   color: var(--mainColor);
@@ -89,6 +104,7 @@ nav {
 }
 .kCard {
   background-color: green;
+  flex: 1;
 }
 .kTitle {
   color: var(--mainColor);
@@ -116,3 +132,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
+/* .logo {
+  display: flex;
+} */
