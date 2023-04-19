@@ -36,17 +36,20 @@ nav {
   align-items: center;
   gap: 10px;
 }
+/* Home */
 .title {
   font-size: 4rem;
+  color: var(--mainColor);
 }
 .para {
   font-size: 1.5rem;
 }
-
+/* Menu */
 .sCard {
   background-color: pink;
 }
 .sTitle {
+  color: var(--mainColor);
 }
 .sDesc {
 }
@@ -54,6 +57,7 @@ nav {
   background-color: yellow;
 }
 .bTitle {
+  color: var(--mainColor);
 }
 .bDesc {
 }
@@ -61,8 +65,23 @@ nav {
   background-color: green;
 }
 .kTitle {
+  color: var(--mainColor);
 }
 .kDesc {
+}
+/* Contact */
+.addressTitle {
+  font-size: 4rem;
+  color: var(--mainColor);
+}
+.addressDesc {
+  font-size: 1.5rem;
+}
+.hours {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
