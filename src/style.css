@@ -5,9 +5,9 @@
   --darkColor: rgba(10, 0, 50, 0.7);
   --blue: rgba(0, 0, 10, 0.1);
   --lineColor: rgba(100, 20, 20, 1);
-  --pink: rgba(180, 0, 200, 0.7);
-  --yellow: rgba(255, 255, 0, 0.7);
-  --green: rgba(0, 200, 10, 0.7);
+  --pink: rgba(230, 0, 230, 0.5);
+  --yellow: rgba(200, 200, 0, 0.5);
+  --green: rgba(0, 200, 10, 0.5);
   --font: "Dancing Script", cursive;
 }
 
@@ -61,6 +61,7 @@ nav {
 }
 /* main body */
 .content {
+  padding: 20px;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -68,11 +69,17 @@ nav {
   align-items: center;
   gap: 10px;
 }
+.contentBlur {
+  backdrop-filter: blur(20px);
+  background-color: var(--blue);
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
 /* Home */
 .title {
   font-family: var(--font);
   font-size: 10rem;
-  /* border-bottom: 2px solid var(--lineColor); */
 }
 .para {
   font-size: 1.5rem;
@@ -84,8 +91,27 @@ nav {
   background-color: var(--blue);
 }
 /* Menu */
+.sCard,
+.bCard,
+.kCard {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sCard:hover {
+  background-color: rgba(230, 0, 230, 1);
+}
+.bCard:hover {
+  background-color: rgba(200, 200, 0, 1);
+}
+.kCard:hover {
+  background-color: rgba(0, 200, 10, 1);
+}
 .sCard {
-  background-color: pink;
+  background-color: var(--pink);
+  backdrop-filter: blur(20px);
   flex: 1;
 }
 .sTitle {
@@ -94,7 +120,8 @@ nav {
 .sDesc {
 }
 .bCard {
-  background-color: yellow;
+  background-color: var(--yellow);
+  backdrop-filter: blur(20px);
   flex: 1;
 }
 .bTitle {
@@ -103,7 +130,8 @@ nav {
 .bDesc {
 }
 .kCard {
-  background-color: green;
+  background-color: var(--green);
+  backdrop-filter: blur(20px);
   flex: 1;
 }
 .kTitle {
