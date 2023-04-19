@@ -1,5 +1,10 @@
 :root {
   --mainColor: rgba(255, 255, 255, 0.8);
+  --darkColor: rgba(10, 0, 50, 0.7);
+  --lineColor: rgba(100, 20, 20, 1);
+  --pink: rgba(180, 0, 200, 0.7);
+  --yellow: rgba(255, 255, 0, 0.7);
+  --green: rgba(0, 200, 10, 0.7);
 }
 
 * {
@@ -23,11 +28,31 @@ nav {
   gap: 50px;
 }
 .navBtn {
-  padding: 10px;
-  border-style: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--darkColor);
+  background-color: transparent;
+  padding: 1.2em;
+  border-bottom: 2px solid var(--mainColor);
+  border-top: none;
+  border-right: none;
+  border-left: none;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
-
+.navBtn:nth-child(1):hover {
+  border-color: var(--pink);
+  transform: translate(5px, 0);
+}
+.navBtn:nth-child(2):hover {
+  border-color: var(--yellow);
+  transform: translate(5px, 0);
+}
+.navBtn:nth-child(3):hover {
+  border-color: var(--green);
+  transform: translate(5px, 0);
+}
+/* main body */
 .content {
   height: 80vh;
   display: flex;
@@ -39,6 +64,7 @@ nav {
 /* Home */
 .title {
   font-size: 4rem;
+  border-bottom: 2px solid var(--lineColor);
   color: var(--mainColor);
 }
 .para {
