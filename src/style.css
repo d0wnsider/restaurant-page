@@ -4,7 +4,6 @@
   --mainColor: rgba(255, 255, 255, 0.8);
   --darkColor: rgba(10, 0, 50, 0.7);
   --blue: rgba(0, 0, 10, 0.1);
-  --lineColor: rgba(100, 20, 20, 1);
   --pink: rgba(230, 0, 230, 0.5);
   --yellow: rgba(200, 200, 0, 0.5);
   --green: rgba(0, 200, 10, 0.5);
@@ -68,11 +67,12 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  overflow: auto;
 }
 .contentBlur {
   backdrop-filter: blur(20px);
   background-color: var(--blue);
-  width: 80%;
+  width: 50%;
   display: block;
   margin: 0 auto;
 }
@@ -82,62 +82,112 @@ nav {
   font-size: 10rem;
 }
 .para {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .title,
 .para {
   color: var(--mainColor);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   background-color: var(--blue);
 }
 /* Menu */
+.menuTitle {
+  font-family: var(--font);
+  color: var(--darkColor);
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sCard,
 .bCard,
-.kCard {
+.kCard,
+.wCard,
+.bbCard,
+.aCard {
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.sCard:hover {
+.sCard:hover,
+.wCard:hover {
   background-color: rgba(230, 0, 230, 1);
 }
-.bCard:hover {
+.bCard:hover,
+.bbCard:hover {
   background-color: rgba(200, 200, 0, 1);
 }
-.kCard:hover {
+.kCard:hover,
+.aCard:hover {
   background-color: rgba(0, 200, 10, 1);
 }
+/* strawberry */
 .sCard {
   background-color: var(--pink);
-  backdrop-filter: blur(20px);
   flex: 1;
 }
 .sTitle {
   color: var(--mainColor);
 }
 .sDesc {
+  color: var(--mainColor);
 }
+/* banana */
 .bCard {
   background-color: var(--yellow);
-  backdrop-filter: blur(20px);
   flex: 1;
 }
 .bTitle {
   color: var(--mainColor);
 }
 .bDesc {
+  color: var(--mainColor);
 }
+/* kale */
 .kCard {
   background-color: var(--green);
-  backdrop-filter: blur(20px);
   flex: 1;
 }
 .kTitle {
   color: var(--mainColor);
 }
 .kDesc {
+  color: var(--mainColor);
+}
+/* watermelon */
+.wCard {
+  background-color: var(--pink);
+  flex: 1;
+}
+.wTitle {
+  color: var(--mainColor);
+}
+.wDesc {
+  color: var(--mainColor);
+}
+/* blueberry */
+.bbCard {
+  background-color: var(--yellow);
+  flex: 1;
+}
+.bbTitle {
+  color: var(--mainColor);
+}
+.bbDesc {
+  color: var(--mainColor);
+}
+/* avocado */
+.aCard {
+  background-color: var(--green);
+  flex: 1;
+}
+.aTitle {
+  color: var(--mainColor);
+}
+.aDesc {
+  color: var(--mainColor);
 }
 /* Contact */
 .addressTitle {
